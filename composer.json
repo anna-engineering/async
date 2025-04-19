@@ -1,0 +1,22 @@
+{
+  "name": "anna-engineering/async",
+  "autoload": {
+    "psr-4": {
+      "A\\Async\\": ["src/A/Async"]
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "": ["tests/"]
+    }
+  },
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "brianium/paratest": "*"
+  }
+}
