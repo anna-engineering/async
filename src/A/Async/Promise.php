@@ -231,7 +231,14 @@ class Promise implements \A\Async\PromiseInterface
     {
         while ($this->is_pending)
         {
-            \Fiber::getCurrent()?->suspend();
+            if ($fiber = \Fiber::getCurrent())
+            {
+                $fiber->suspend();
+            }
+            else
+            {
+                static::schedule(false);
+            }
         }
 
         return $this->result;
