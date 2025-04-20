@@ -22,7 +22,7 @@ if (!function_exists('asleep'))
 
 if (!function_exists('await'))
 {
-    function await()
+    function await(\A\Async\PromiseInterface $promise)
     {
     }
 }
