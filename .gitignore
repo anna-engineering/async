@@ -1,5 +1,9 @@
 # https://github.com/github/gitignore
 
+.idea
+!.idea/runConfigurations/*
+.phpunit.result.cache
+
 # ── Composer ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 composer.phar
