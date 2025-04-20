@@ -2,7 +2,7 @@
 
 if (!function_exists('asleep'))
 {
-    function asleep(float $seconds) : void
+    function asleep(float $seconds = 0) : void
     {
         if ($fiber = \Fiber::getCurrent())
         {
