@@ -13,4 +13,6 @@ interface PromiseProxyInterface extends PromiseInterface
     public function __isset(string $name) : bool;
 
     public function __unset(string $name) : void;
+
+    public function __toString() : string;
 }

@@ -28,4 +28,9 @@ class PromiseProxy extends Promise implements PromiseProxyInterface
     {
         unset($this->wait()->$name);
     }
+
+    public function __toString() : string
+    {
+        return (string) $this->wait();
+    }
 }
